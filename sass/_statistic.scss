@@ -1,0 +1,11 @@
+.statistic{
+    margin-top: 50px;
+    .statistic__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .statistic__news{
+            color: white;
+        }
+    }
+}

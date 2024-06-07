@@ -1,0 +1,46 @@
+.trending{
+    margin-top: 50px;
+    .trending__title{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h2{
+            line-height: 29px;
+        }
+    }
+    .trending__img{
+        margin-top: 20px;
+        display: flex;
+    }
+    .trending__bottom{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h3{
+            color: white;
+        }
+        .trending__under__bottom{
+            display: flex;
+            align-items: center;
+            color: white;
+            gap: 10px;
+        }
+    }
+}
+@media (min-width: 600px) {
+    .trending{
+        .trending__title{
+            font-size: 24px;
+            p{
+                font-size: 22px;
+            }
+        }
+        .trending__cards{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0px;
+    background-color: #2B2B2B;
+    &__shrink{
+        backdrop-filter: blur(4px);
+        box-shadow: 0 0 10px #A259FF;
+    }
+    &__btn-hamburger{
+        width: 20px;
+        background: transparent;
+        border: none;
+    }
+    &__logo{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    &__item{
+        display: flex;
+        gap: 20px;
+        transition: 0.2s;
+    }
+    .header__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 152px;
+        height: 60px;
+        padding: 0px, 30px, 0px, 30px;
+        border-radius: 20px;
+        border: none;
+        gap: 10px;
+        font-size: 18px;
+        color: white;
+        background-color: #A259FF;
+        transition: 0.4s;
+    }
+    .header__btn:hover{
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #A259FF;
+    }
+    &__item:hover{
+        color: #A259FF ;
+    }
+    &__right &__list{
+        display: flex;
+        gap: 24px;
+    }
+
+    &__list{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        gap: 10px;
+        box-shadow: 0 0 10px black;
+        transition: 0.6s;
+    }
+    &__list-show{
+        left: 0;
+    }
+}
+@media (min-width: 600px) {
+    .header{
+        &__list{
+            position: static;
+            display: flex;
+            box-shadow: none;
+            height: auto;
+            width: auto;
+        }
+        .header__btn-hamburger{
+            display: none;
+        }
+    }
+}
+// @media (min-width: 902px) {
+//     .
+// }

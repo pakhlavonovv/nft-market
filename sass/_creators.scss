@@ -1,0 +1,76 @@
+.creators{
+    margin-top: 40px;
+    .creators__title{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        word-spacing: 1px;
+    }
+    .creator__card{
+        margin-top: 30px;
+        width: 100%;
+        height: 100px;
+        background-color: #3B3B3B;
+        border-radius: 20px;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    .creator__card__left img{
+        width: 60px;
+        height: 60px;
+    }
+    .creators__btn button{
+        margin-top: 50px;
+        width: 100%;
+        height: 60px;
+        border: 1px solid #A259FF;
+        color: white;
+        font-size: 16px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 20px;
+        background-color: transparent;
+        transition: 0.4s;
+    }
+    .creators__btn button:hover{
+        background-color: #A259FF;
+    }
+}
+
+@media (min-width: 600px) {
+    .creators{
+        .creator__card{
+            width: 240px;
+            height: 238px;
+            flex-direction: column;
+            .creator__card__right{
+                text-align: center;
+            }
+        }
+        .creators__cards__wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .creators__btn{
+            margin-top: 30px;
+        }
+        .creators__btn button{
+            width: 247px;
+            height: 60px;
+            margin: 0 auto;
+        }
+        .creator__card__left img{
+            width: 110px;
+            height: 120px;
+        }
+    }
+}

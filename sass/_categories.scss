@@ -1,0 +1,102 @@
+.categories{
+    .categories__title{
+        color: white;
+        margin-top: 50px;
+    }
+    .categories__cards__wrapper{
+        margin-top: 30px;
+        flex: 1/2;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        .categories__card{
+            width: 147px;
+            // height: 209px;
+            background-color: #3B3B3B;
+            position: relative;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all ease 0.4s;
+
+            &:hover .ctgr__card__hover__img{
+                opacity: 10;
+                transition: all ease 0.4s;
+
+            }
+            &:hover .categories__bg__img{
+                -webkit-filter: blur(30px);
+                filter: blur(3px);
+            }
+            .categories__bg__img{
+                width: 100%;
+            }
+            .categories__card__hover_img{
+                position: absolute;
+                transform: translate(-50%, -90%);
+                left: 50%;
+                top: 50%;
+                z-index: 1;
+            }
+            .ctgr__card__hover__img{
+                opacity: 0;
+                width: 80px;
+                height: 80px;
+            }
+            h4{
+                color: white;
+                padding: 15px 20px;
+            }
+    }
+    .categories__card img{
+        width: 147px;
+        height: 142px;
+    }
+    .categories__card:hover{
+        backdrop-filter: blur(4px);
+    }
+}
+}
+
+@media (min-width: 600px) {
+    .categories{
+        .categories__cards__wrapper{
+            margin-top: 30px;
+            .categories__card{
+                width: 45%;
+                height: 316px;
+                transition: ease-in-out 0.4s;
+                h4{
+                    font-size: 22px;
+                }
+                img{
+                    width: 100%;
+                    height: 240px;
+                    object-fit: cover;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1020px) {
+    .categories{
+        .categories__cards__wrapper{
+            margin-top: 50px;
+            .categories__card{
+                width: 20%;
+                height: 316px;
+                transition: ease-in-out 0.2s;
+                h4{
+                    font-size: 22px;
+                }
+                img{
+                    width: 100%;
+                    height: 240px;
+                    object-fit: cover;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}
