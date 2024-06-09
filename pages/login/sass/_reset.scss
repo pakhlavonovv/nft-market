@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    background-color: #2B2B2B;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+button{
+    cursor: pointer;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.df{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}

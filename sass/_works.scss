@@ -42,14 +42,39 @@
     .works{
         .works__cards{
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: auto auto;
             gap: 10px;
             .works__card{
                 height: 100%;
+                flex-direction: column;
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
                 .works__card__info{
-                    flex-wrap: wrap;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    h3{
+                        margin-top: 20px;
+                        font-size: 22px;
+                    }
+                    p{
+                        font-size: 16px;
+                        text-align: center;
+                        line-height: 22px;
+                        width: 270px;
+                    }
                 }
             }
+        }
+    }
+}
+@media (min-width: 900px) {
+    .works{
+        .works__cards{
+            display: grid;
+            grid-template-columns: auto auto auto;
         }
     }
 }
