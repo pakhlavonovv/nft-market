@@ -1,0 +1,138 @@
+.artist__cards{
+    margin-top: 70px;
+    .artist__card__title{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        border-bottom: 1px;
+        transition: all 0.4s;
+        h3{
+            width: 100px;
+            text-align: center;
+            padding: 7px;
+        }
+        h3:hover{
+            color: white;
+            border-bottom: solid white;
+        }
+    }
+    .artist__cards__bg{
+        margin-top: 10px;
+        background-color: #3B3B3B;
+        .artist__cards__wrapper__s{
+            display: none;
+        }
+        .artist__cards__wrapper__th{
+            display: none;
+        }
+        .artist__cards__wrapper{
+            padding: 20px;
+            display: grid;
+            grid-template-columns: auto;
+            gap: 20px;
+            .artist__card{
+                background-color: #2B2B2B;
+                border-radius: 20px;
+                color: white;
+                .card__info{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px;
+                    gap: 20px;
+                    .card__price{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 7px;
+                    }
+                }
+                .card__info__p{
+                    display: flex;
+                    gap: 10px;
+                }
+                .img-placeholder{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .artist__cards{
+        .artist__cards__bg{
+                margin-top: 10px;
+                background-color: #3B3B3B;
+                .artist__cards__wrapper__s{
+                    padding: 20px;
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    gap: 20px;
+                    .artist__card{
+                        background-color: #2B2B2B;
+                        border-radius: 20px;
+                        color: white;
+                        .card__info{
+                            display: flex;
+                            flex-direction: column;
+                            padding: 20px;
+                            gap: 20px;
+                            .card__price{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 7px;
+                            }
+                        }
+                        .card__info__p{
+                            display: flex;
+                            gap: 10px;
+                        }
+                        .img-placeholder{
+                            width: 100%;
+                        }
+                    }
+                }
+                .artist__cards__wrapper{
+                    display: none;
+                }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .artist__cards{
+        .artist__cards__bg{
+            .artist__cards__wrapper__s{
+                display: none;
+            }
+            .artist__cards__wrapper__th{
+                padding: 20px;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                gap: 20px;
+                .artist__card{
+                    background-color: #2B2B2B;
+                    border-radius: 20px;
+                    color: white;
+                    .card__info{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 20px;
+                        gap: 20px;
+                        .card__price{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 7px;
+                        }
+                    }
+                    .card__info__p{
+                        display: flex;
+                        gap: 10px;
+                    }
+                    .img-placeholder{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
