@@ -123,7 +123,7 @@ button {
     width: 100%;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .header__list {
     position: static;
     display: flex;

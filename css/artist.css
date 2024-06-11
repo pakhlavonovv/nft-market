@@ -42,7 +42,7 @@ button {
   top: 0;
   width: 100%;
   padding: 15px 0px;
-  background-color: rgba(43, 43, 43, 0.1333333333);
+  background-color: rgba(43, 43, 43, 0.768627451);
   z-index: 1;
 }
 .header__shrink {
@@ -123,7 +123,7 @@ button {
     width: 100%;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .header__list {
     position: static;
     display: flex;
@@ -270,6 +270,10 @@ button {
   color: white;
   gap: 12px;
   border-radius: 20px;
+  transition: 0.2s;
+}
+.statistic .statistic__actions .statistic__actions__button_s:hover {
+  box-shadow: 0 0 10px 0 #A259FF;
 }
 
 @media (min-width: 600px) {
@@ -301,6 +305,34 @@ button {
 }
 .artist__cards {
   margin-top: 70px;
+}
+.artist__cards .nft__cards__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
+.artist__cards .nft__cards__top h2 {
+  font-size: 33px;
+}
+.artist__cards .nft__cards__top button {
+  width: 70%;
+  height: 60px;
+  border-radius: 20px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  gap: 10px;
+  border: 1px solid #A259FF;
+  transition: 0.3s;
+}
+.artist__cards .nft__cards__top button:hover {
+  box-shadow: 0 0 10px 0 #A259FF;
 }
 .artist__cards .artist__card__title {
   display: flex;
@@ -360,6 +392,17 @@ button {
 }
 
 @media (min-width: 600px) {
+  .artist__cards .nft__cards__top {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .artist__cards .nft__cards__top h2 {
+    font-size: 30px;
+  }
+  .artist__cards .nft__cards__top button {
+    width: 30%;
+  }
   .artist__cards .artist__cards__bg {
     margin-top: 10px;
     background-color: #3B3B3B;
@@ -395,6 +438,16 @@ button {
   }
   .artist__cards .artist__cards__bg .artist__cards__wrapper {
     display: none;
+  }
+}
+@media (min-width: 992px) {
+  .artist__cards .nft__cards__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .artist__cards .nft__cards__top button {
+    width: 20%;
   }
 }
 @media (min-width: 1200px) {
@@ -505,7 +558,7 @@ button {
   gap: 10px;
   background-color: #A259FF;
   color: white;
-  font-size: 16px;
+  font-size: 12px;
   transition: 0.4s;
 }
 .footer .footer__actions button:hover {
@@ -513,7 +566,21 @@ button {
   border: 1px solid #A259FF;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 600px) {
+  .footer .footer__actions button {
+    width: 20%;
+  }
+  .footer .footer__actions input {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .footer .footer__actions button {
+    width: 100%;
+  }
+  .footer .footer__actions input {
+    width: 100%;
+  }
   .footer .footer__wrapper {
     display: flex;
   }

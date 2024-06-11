@@ -285,51 +285,6 @@ button {
   color: white;
 }
 
-.trending {
-  margin-top: 50px;
-}
-.trending .trending__title {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.trending .trending__title h2 {
-  line-height: 29px;
-}
-.trending .trending__img {
-  margin-top: 20px;
-  display: flex;
-}
-.trending .trending__bottom {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.trending .trending__bottom h3 {
-  color: white;
-}
-.trending .trending__bottom .trending__under__bottom {
-  display: flex;
-  align-items: center;
-  color: white;
-  gap: 10px;
-}
-
-@media (min-width: 600px) {
-  .trending .trending__title {
-    font-size: 24px;
-  }
-  .trending .trending__title p {
-    font-size: 22px;
-  }
-  .trending .trending__cards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
 .creators {
   margin-top: 40px;
 }
@@ -518,6 +473,9 @@ button {
   cursor: pointer;
   gap: 12px;
 }
+.discover .discover__bottom__btn button:hover {
+  box-shadow: 0 0 10px 0 #A259FF;
+}
 .discover .discover__top .discover__btn {
   display: none;
 }
@@ -584,8 +542,12 @@ button {
     align-items: center;
     justify-content: center;
     gap: 12px;
+    transition: 0.3s;
   }
-  .discover .discover__top .discover__btn button {
+  .discover .discover__top .discover__btn:hover {
+    box-shadow: 0 0 10px 0 #A259FF;
+  }
+  .discover .discover__top .discover__btn .discover__button {
     background-color: transparent;
     border: none;
     color: white;

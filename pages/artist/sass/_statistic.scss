@@ -82,6 +82,10 @@
             color: white;
             gap: 12px;
             border-radius: 20px;
+            transition: 0.2s;
+            &:hover{
+                box-shadow: 0 0 10px 0 #A259FF;
+            }
         }
     }
 }
